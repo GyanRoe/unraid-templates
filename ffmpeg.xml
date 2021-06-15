@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<Container version="2.1">
+<Container version="1.3">
   <Name>ffmpeg</Name>
   <Repository>gyanroe/ffmpeg</Repository>
   <Registry>https://hub.docker.com/r/gyanroe/ffmpeg</Registry>
