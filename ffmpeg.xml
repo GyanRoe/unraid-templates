@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ffmpeg</Name>
+  <Repository>gyanroe/ffmpeg</Repository>
+  <Registry>https://hub.docker.com/r/gyanroe/ffmpeg</Registry>
+  <Network>host</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Overview>conv2mp4</Overview>
+  <Category>Downloaders: Tools:</Category>
+  <WebUI></WebUI>
+  <Icon></Icon>
+  <Description>Built in ffmpeg and batch format conversion script</Description>
+  <Networking>
+    <Mode>host</Mode>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/media</HostDir>
+      <ContainerDir>/work/media</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>    
+  </Data>
+  <Environment>  
+  <Labels/>
+  <Config Name="media Path" Target="/work/media" Default="/mnt/user/appdata/media" Mode="rw" Description="Container Path: /work/media" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/media</Config>  
+</Container>
