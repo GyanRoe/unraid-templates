@@ -8,7 +8,7 @@
   <Privileged>false</Privileged>
   <Overview>conv2mp4</Overview>
   <Category>Downloaders: Tools:</Category>  
-  <Icon>https://gitee.com/gyanroe/unraid-docker-templates/blob/master/conv2mp4/icons/ffmpeg.png</Icon>
+  <Icon>https://cdn.jsdelivr.net/gh/GyanRoe/unraid-templates/icons/ffmpeg.png</Icon>
   <Description>Built in ffmpeg and batch format conversion script</Description>
   <Networking>
     <Mode>host</Mode>
