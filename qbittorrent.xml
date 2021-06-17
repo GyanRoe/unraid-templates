@@ -4,7 +4,7 @@
     <Repository>80x86/qbittorrent:</Repository>
     <Registry>https://hub.docker.com/r/80x86/qbittorrent</Registry>
     <Network>bridge</Network>
-    <Shell>bash</Shell>
+    <Shell>sh</Shell>
     <Branch>
         <Tag>4.3.5-alpine-3.13.5-amd64</Tag>
         <TagDescription>For amd64</TagDescription>
