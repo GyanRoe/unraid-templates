@@ -13,5 +13,5 @@
   <Networking>
     <Mode>host</Mode>
   </Networking>  
-  <Config Name="media Path" Target="/work/media" Default="/mnt/user/appdata/media" Mode="rw" Description="Container Path: /work/media" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/media</Config>  
+  <Config Name="media Path" Target="/work/media" Default="/mnt/user/share" Mode="rw" Description="Container Path: /work/media" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/media</Config>  
 </Container>
