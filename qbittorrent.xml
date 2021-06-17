@@ -8,7 +8,7 @@
     <Privileged>false</Privileged>
     <Overview>qbittorrent | based on 80x86 Docker image.</Overview>
     <Category>Downloaders: Tools:</Category>
-    <WebUI>http://[IP]:[PORT:8082]</WebUI>
+    <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <Icon>https://cdn.jsdelivr.net/gh/GyanRoe/unraid-templates/icons/qbittorrent.png</Icon>
     <Description>qbittorrent | based on 80x86 Docker image.</Description>
     <Config Name="Web_Port" Target="8080" Default="8080" Mode="tcp" Description="httpgui" Type="Port" Display="always" Required="true" Mask="false"/>
