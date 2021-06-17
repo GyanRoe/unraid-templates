@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="4.3.5">
-    <Name>qbittorrent</Name>
+    <Name>qBittorrent</Name>
     <Repository>80x86/qbittorrent:4.3.5-alpine-3.13.5-amd64</Repository>
     <Registry>https://hub.docker.com/r/80x86/qbittorrent</Registry>
     <Network>bridge</Network>
