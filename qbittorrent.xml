@@ -1,36 +1,32 @@
 <?xml version="1.0"?>
-<!-- DO NOT CHANGE THIS FILE MANUALLY, IT IS AUTOMATICALLY GENERATED -->
-<Container version="2">
+<Container version="4.3.5">
     <Name>qbittorrent</Name>
-    <Repository>ghcr.io/linuxserver/qbittorrent</Repository>
-    <Registry>https://github.com/orgs/linuxserver/packages/container/package/qbittorrent</Registry>
-    <DonateText>Donations</DonateText>
-    <DonateLink>https://www.linuxserver.io/donate</DonateLink>
-    <DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+    <Repository>80x86/qbittorrent:</Repository>
+    <Registry>https://hub.docker.com/r/80x86/qbittorrent</Registry>
     <Network>bridge</Network>
-    <Privileged>false</Privileged>
-    <Support>https://github.com/linuxserver/docker-qbittorrent/issues/new/choose</Support>
     <Shell>bash</Shell>
     <Branch>
-        <Tag>latest</Tag>
-        <TagDescription>Stable qbittorrent releases</TagDescription>
+        <Tag>4.3.5-alpine-3.13.5-amd64</Tag>
+        <TagDescription>For amd64</TagDescription>
     </Branch>
     <Branch>
-        <Tag>unstable</Tag>
-        <TagDescription>Unstable qbittorrent releases</TagDescription>
+        <Tag>4.3.5-alpine-3.13.5-arm64</Tag>
+        <TagDescription>For arm64</TagDescription>
     </Branch>
-    <Project>https://www.qbittorrent.org/</Project>
-    <Overview>The [Qbittorrent](https://www.qbittorrent.org/) project aims to provide an open-source software alternative to µTorrent. qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.</Overview>
-    <WebUI>http://[IP]:[PORT:8080]</WebUI>
-    <TemplateURL>https://raw.githubusercontent.com/linuxserver/templates/main/unraid/qbittorrent.xml</TemplateURL>
-    <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/qbittorrent-logo.png</Icon>
-    <Config Name="WebUI" Target="6881" Default="6881" Mode="tcp" Description="tcp connection port" Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Port: 6881" Target="6881" Default="6881" Mode="udp" Description="udp connection port" Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Port: 8080" Target="8080" Default="8080" Mode="tcp" Description="http gui" Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="Appdata" Target="/config" Default="" Mode="rw" Description="Contains all relevant configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="Path: /downloads" Target="/downloads" Default="" Mode="rw" Description="Location of downloads on disk." Type="Path" Display="always" Required="true" Mask="false"/>
-    <Config Name="WEBUI_PORT" Target="WEBUI_PORT" Default="8080" Description="for changing the port of the webui, see below for explanation" Type="Variable" Display="always" Required="true" Mask="false"/>
-    <Config Name="PUID" Target="PUID" Default="99" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
-    <Config Name="UMASK" Target="UMASK" Default="022" Description="Container Variable: UMASK" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+    <Privileged>false</Privileged>
+    <Overview>qbittorrent | based on 80x86 Docker image.</Overview>
+    <Category>Downloaders: Tools:</Category>
+    <WebUI>http://[IP]:[PORT:8082]</WebUI>
+    <Icon>https://cdn.jsdelivr.net/gh/GyanRoe/unraid-templates/icons/qbittorrent.png</Icon>
+    <Description>qbittorrent | based on 80x86 Docker image.</Description>
+    <Config Name="Web_Port" Target="8080" Default="8080" Mode="tcp" Description="httpgui" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="BT_Port: 8999" Target="8999" Default="8999" Mode="tcp" Description="tcp connection port" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="BT_Port: 8999" Target="8999" Default="8999" Mode="udp" Description="udp connection port" Type="Port" Display="always" Required="true" Mask="false"/>
+    <Config Name="DowloadPath:" Target="/downloads" Default="/downloads" Mode="rw" Description="Location of downloads on disk." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="AppConfig" Target="/config" Default="/mnt/user/appdata/qBittorrent/config" Mode="rw" Description="Contains configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="AppData" Target="/config" Default="/mnt/user/appdata/qBittorrent/data" Mode="rw" Description="Contains stats data file." Type="Path" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PUID" Target="PUID" Default="1000" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>\
+    <Config Name="WEB_PORT" Target="WEB_PORT" Default="8080" Description="http or https listen port" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+    <Config Name="BT_PORT" Target="BT_PORT" Default="8999" Description="BT listen port (both tcp and udp)" Type="Variable" Display="advanced" Required="true" Mask="false"/>
 </Container>
