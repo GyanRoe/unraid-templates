@@ -1,18 +1,10 @@
 <?xml version="1.0"?>
 <Container version="4.3.5">
     <Name>qbittorrent</Name>
-    <Repository>80x86/qbittorrent:</Repository>
+    <Repository>80x86/qbittorrent:4.3.5-alpine-3.13.5-amd64</Repository>
     <Registry>https://hub.docker.com/r/80x86/qbittorrent</Registry>
     <Network>bridge</Network>
-    <Shell>sh</Shell>
-    <Branch>
-        <Tag>4.3.5-alpine-3.13.5-amd64</Tag>
-        <TagDescription>For amd64</TagDescription>
-    </Branch>
-    <Branch>
-        <Tag>4.3.5-alpine-3.13.5-arm64</Tag>
-        <TagDescription>For arm64</TagDescription>
-    </Branch>
+    <Shell>sh</Shell>    
     <Privileged>false</Privileged>
     <Overview>qbittorrent | based on 80x86 Docker image.</Overview>
     <Category>Downloaders: Tools:</Category>
