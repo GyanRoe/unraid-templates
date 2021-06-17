@@ -14,7 +14,7 @@
     <Config Name="Web_Port" Target="8080" Default="8080" Mode="tcp" Description="httpgui" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="BT_Port" Target="8999" Default="8999" Mode="tcp" Description="tcp connection port" Type="Port" Display="always" Required="true" Mask="false"/>
     <Config Name="BT_Port" Target="8999" Default="8999" Mode="udp" Description="udp connection port" Type="Port" Display="always" Required="true" Mask="false"/>
-    <Config Name="DowloadPath" Target="/downloads" Default="/downloads" Mode="rw" Description="Location of downloads on disk." Type="Path" Display="always" Required="true" Mask="false"/>
+    <Config Name="DowloadPath" Target="/downloads" Default="/mnt/user/downloads" Mode="rw" Description="Location of downloads on disk." Type="Path" Display="always" Required="true" Mask="false"/>
     <Config Name="AppConfig" Target="/config" Default="/mnt/user/appdata/qBittorrent/config" Mode="rw" Description="Contains configuration files." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="AppData" Target="/config" Default="/mnt/user/appdata/qBittorrent/data" Mode="rw" Description="Contains stats data file." Type="Path" Display="advanced" Required="true" Mask="false"/>
     <Config Name="PUID" Target="PUID" Default="1000" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
