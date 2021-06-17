@@ -9,10 +9,10 @@
   <Overview>qbittorrent | A perfect Aria2 Docker image.</Overview>
   <Category>Downloaders: Tools:</Category>
   <WebUI></WebUI>
-  <Icon>https://cdn.jsdelivr.net/gh/P3TERX/unraid-docker-templates/P3TERX/icons/Aria2-Pro.png</Icon>
+  <Icon>https://cdn.jsdelivr.net/gh/GyanRoe/unraid-templates/icons/qbittorrent.png</Icon>
   <Description>Aria2 Pro | A perfect Aria2 Docker image.</Description>
   <Networking>
-    <Mode>host</Mode>
+    <Mode>bridge</Mode>
   </Networking>
   <Data>
     <Volume>
